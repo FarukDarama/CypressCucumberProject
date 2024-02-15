@@ -17,7 +17,7 @@ Feature: ToolShop Login Testleri
 
 
     #Negative Scenario
-    
+
     @smoke @invalidLogin
     Scenario: Email alani bos birakilarak login testi
 
@@ -27,3 +27,8 @@ Feature: ToolShop Login Testleri
         And Password alanina bir password yazarim
         And Login butonuna tiklarim
         Then Emailin gerekli oldugunu soyleyen bir hata mesaji gorurum
+
+
+    Scenario: Linki ayni sekmede acma
+        Given Ben ToolShop sitesine giderim
+        When Github Repo linkine tiklarim
